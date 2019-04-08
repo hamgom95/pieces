@@ -1,0 +1,57 @@
+.flex#{$post} { display: flex; }
+.flex-inline#{$post} { display: inline-flex; }
+
+/* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flex-auto#{$post} {
+ flex: 1 1 auto;
+ min-width: 0; /* 1 */
+ min-height: 0; /* 1 */
+}
+
+.flex-none#{$post} { flex: none; }
+
+.flex-column#{$post} { flex-direction: column; }
+.flex-row#{$post} { flex-direction: row; }
+.flex-wrap#{$post} { flex-wrap: wrap; }
+.flex-nowrap#{$post} { flex-wrap: nowrap; }
+.flex-wrap-reverse#{$post} { flex-wrap: wrap-reverse; }
+.flex-column-reverse#{$post} { flex-direction: column-reverse; }
+.flex-row-reverse#{$post} { flex-direction: row-reverse; }
+
+.items-start#{$post} { align-items: flex-start; }
+.items-end#{$post} { align-items: flex-end; }
+.items-center#{$post} { align-items: center; }
+.items-baseline#{$post} { align-items: baseline; }
+.items-stretch#{$post} { align-items: stretch; }
+
+.self-start#{$post} { align-self: flex-start; }
+.self-end#{$post} { align-self: flex-end; }
+.self-center#{$post} { align-self: center; }
+.self-baseline#{$post} { align-self: baseline; }
+.self-stretch#{$post} { align-self: stretch; }
+
+.justify-start#{$post} { justify-content: flex-start; }
+.justify-end#{$post} { justify-content: flex-end; }
+.justify-center#{$post} { justify-content: center; }
+.justify-between#{$post} { justify-content: space-between; }
+.justify-around#{$post} { justify-content: space-around; }
+
+.content-start#{$post} { align-content: flex-start; }
+.content-end#{$post} { align-content: flex-end; }
+.content-center#{$post} { align-content: center; }
+.content-between#{$post} { align-content: space-between; }
+.content-around#{$post} { align-content: space-around; }
+.content-stretch#{$post} { align-content: stretch; }
+
+@for $i from 0 through $flexbox-item-limit {
+    .order-#{$i}#{$post} { order: $i; }
+}
+.order-last#{$post} { order: 99999; }
+
+.flex-grow-0#{$post} { flex-grow: 0; }
+.flex-grow-1#{$post} { flex-grow: 1; }
+
+.flex-shrink-0#{$post} { flex-shrink: 0; }
+.flex-shrink-1#{$post} { flex-shrink: 1; }
+

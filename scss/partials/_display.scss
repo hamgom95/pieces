@@ -1,0 +1,20 @@
+.dn#{$post} { display: none; }
+.di#{$post} { display: inline; }
+.db#{$post} { display: block; }
+.dib#{$post} { display: inline-block; }
+.dit#{$post} { display: inline-table; }
+.dt#{$post} { display: table; }
+.dtc#{$post} { display: table-cell; }
+.dt-row#{$post} { display: table-row; }
+.dt-row-group#{$post} { display: table-row-group; }
+.dt-column#{$post} { display: table-column; }
+.dt-column-group#{$post} { display: table-column-group; }
+
+/*
+ This will set table to full width and then
+ all cells will be equal width
+*/
+.dt--fixed#{$post} {
+    table-layout: fixed;
+    width: 100%;
+}

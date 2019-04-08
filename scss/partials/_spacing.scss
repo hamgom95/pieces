@@ -1,0 +1,16 @@
+@each $name, $space in $spacing {
+    .pa#{$name}#{$post} { padding: $space; }
+    .pl#{$name}#{$post} { padding-left: $space; }
+    .pr#{$name}#{$post} { padding-right: $space; }
+    .pb#{$name}#{$post} { padding-bottom: $space; }
+    .pt#{$name}#{$post} { padding-top: $space; }
+    .pv#{$name}#{$post} { padding-top: $space; padding-bottom: $space; }
+    .ph#{$name}#{$post} { padding-left: $space; padding-right: $space; }
+    .ma#{$name}#{$post} { margin: $space; }
+    .ml#{$name}#{$post} { margin-left: $space; }
+    .mr#{$name}#{$post} { margin-right: $space; }
+    .mb#{$name}#{$post} { margin-bottom: $space; }
+    .mt#{$name}#{$post} { margin-top: $space; }
+    .mv#{$name}#{$post} { margin-top: $space; margin-bottom: $space; }
+    .mh#{$name}#{$post} { margin-left: $space; margin-right: $space; }
+}

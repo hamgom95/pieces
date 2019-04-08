@@ -1,0 +1,13 @@
+@each $name, $c in $color {
+    .c-#{$name}#{$post} {
+        color: $c;
+    }
+
+    .bg-#{$name}#{$post} {
+        background-color: $c;
+    }
+
+    .b-#{$name}#{$post} {
+        border-color: $c;
+    }
+}

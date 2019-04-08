@@ -1,0 +1,5 @@
+@each $name, $p in $percentage {
+    .o-#{$name}#{$post} {
+        opacity: $p;
+    }
+}

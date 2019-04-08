@@ -1,0 +1,20 @@
+
+@import "variables";
+
+$post: "";
+@import "partials";
+
+@media #{map-get($breakpoint, "ns")} {
+    $post: "-ns";
+    @import "partials";
+}
+
+@media #{map-get($breakpoint, "m")} {
+    $post: "-m";
+    @import "partials";
+}
+
+@media #{map-get($breakpoint, "l")} {
+    $post: "-l";
+    @import "partials";
+}

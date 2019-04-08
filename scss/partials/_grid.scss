@@ -1,0 +1,46 @@
+@for $i from 1 through $grid-item-limit {
+    .rows-#{$i}#{$post} { grid-template-rows: $i; }
+    .cols-#{$i}#{$post} { grid-template-columns: $i; }
+    .row-#{$i}#{$post} { grid-row: $i; }
+    .row-s-#{$i}#{$post} { grid-row-start: $i; }
+    .row-e-#{$i}#{$post} { grid-row-end: $i; }
+    .col-#{$i}#{$post} { grid-column: $i; }
+    .col-s-#{$i}#{$post} { grid-column-start: $i; }
+    .col-e-#{$i}#{$post} { grid-column-end: $i; }
+
+    .row-sp-#{$i}#{$post} { grid-row: span $i; }
+    .row-s-sp-#{$i}#{$post} { grid-row-start: span $i; }
+    .row-e-sp-#{$i}#{$post} { grid-row-end: span $i; }
+    .col-sp-#{$i}#{$post} { grid-column: span $i; }
+    .col-s-sp-#{$i}#{$post} { grid-column-start: span $i; }
+    .col-e-sp-#{$i}#{$post} { grid-column-end: span $i; }
+}
+.col-auto#{$post} { grid-column: auto; }
+.col-s-auto#{$post} { grid-column-start: auto; }
+.col-e-auto#{$post} { grid-column-end: auto; }
+.row-auto#{$post} { grid-row: auto; }
+.row-s-auto#{$post} { grid-row-start: auto; }
+.row-e-auto#{$post} { grid-row-end: auto; }
+
+@each $name, $spacer in $grid-gap {
+    .grid-gap-#{$name}#{$post} {
+        grid-gap: $spacer;
+    }    
+}
+
+.grid#{$post} { display: grid; }
+.grid-inline#{$post} { display: inline-grid; }
+
+.auto-flow-row#{$post} { grid-auto-flow: row; }
+.auto-flow-col#{$post} { grid-auto-flow: column; }
+.auto-flow-dense#{$post} { grid-auto-flow: dense; }
+.auto-flow-row-dense#{$post} { grid-auto-flow: row dense; }
+.auto-flow-col-dense#{$post} { grid-auto-flow: column dense; }
+
+.auto-cols-auto#{$post} { grid-auto-columns: auto; }
+.auto-cols-min#{$post} { grid-auto-columns: min-content; }
+.auto-cols-max#{$post} { grid-auto-columns: max-content; }
+
+.auto-rows-auto#{$post} { grid-auto-rows: auto; }
+.auto-rows-min#{$post} { grid-auto-rows: min-content; }
+.auto-rows-max#{$post} { grid-auto-rows: max-content; }

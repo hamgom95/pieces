@@ -1,0 +1,13 @@
+.w-auto#{$post} { width: auto; }
+
+@each $name, $p in $percentage {
+    .w-#{$name}#{$post} {
+        width: $p;
+    }
+}
+
+@each $name, $w in $width {
+    .w#{$name}#{$post} {
+        width: $w;
+    }
+} 

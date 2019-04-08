@@ -1,0 +1,11 @@
+.center#{$post} {
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+.mr-auto#{$post} { margin-right: auto; }
+.ml-auto#{$post} { margin-left:  auto; }
+
+.word-normal#{$post} { word-break: normal; }
+.word-wrap#{$post} { word-break: break-all; }
+.word-nowrap#{$post} { word-break: keep-all; }
